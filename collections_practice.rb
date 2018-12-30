@@ -54,7 +54,7 @@ end
 def merge_data(array_one, array_two)
   
   merged_data = []
-  
+  element = {:n
   
   
 end
