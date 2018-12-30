@@ -39,7 +39,9 @@ def count_elements(array)
     i.each do |symbol, name|
       element = {:name => '', :count => 0}
       element[:name] = name
+      counted_array.each do |
       element[:count] += 1
+      
       counted_array << element
     end
   end
