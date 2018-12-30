@@ -61,8 +61,9 @@ def count_elements(array)
   end
   tallied_array = []
   tally.each do |name, amount|
-    element = {:name => name, :count => amount}
-    tallied_array << element
+    name.each do |symbol, actual_name|
+      element = {:name => actual_name, :count => amount}
+      tallied_array << element
   end
   tallied_array
 end
