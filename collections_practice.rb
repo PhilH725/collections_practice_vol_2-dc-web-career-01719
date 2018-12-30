@@ -55,7 +55,9 @@ def merge_data(array_one, array_two)
   
   merged_data = []
   element = {:first_name => '', :awesomeness => 0, :height => "", :last_name => "", :motto => ""}
-  
+  array_one.each do |i|
+    puts i
+  end
   
   
 end
