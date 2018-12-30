@@ -34,15 +34,16 @@ end
 
 def count_elements(array)
   counted_array = []
-  counter = {}
+  counter = 0
   array.each do |i|
     i.each do |symbol, name|
-      element = {:name => '', :count => 0}
-      element[:name] = name
-      counted_array.each do |
-      element[:count] += 1
-      
-      counted_array << element
+      if counter == 0
+        element = {:name => name, :count => 1}
+        counted_array << element
+      else
+        element = {:name => name, :count => 1}
+        counted_array << element
+      end
     end
   end
   counted_array
