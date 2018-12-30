@@ -76,10 +76,19 @@ def find_cool(array)
   ]}
   
   array.each do |i|
+    element = {:name => '', :temperature => ''}
     i.each do |key, value|
-      if key
-  
-
+      if key == :name
+        element[:name] = value
+      end
+      if key == :temperature
+        element[:temperature] = value
+        if value == "cool"
+          return [element]
+        end
+      end
+    end
+  end
 end
 
 def organize_schools(array)
