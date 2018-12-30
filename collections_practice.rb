@@ -43,7 +43,7 @@ def count_elements(array)
       counted_array << element
     end
   end
-  counter
+  counted_array
 end
 
 def merge_data(array_one, array_two)
