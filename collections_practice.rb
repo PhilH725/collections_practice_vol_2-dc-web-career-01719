@@ -52,7 +52,7 @@ def count_elements(array)
 end
 
 def merge_data(array_one, array_two)
-  array_one.zip(array_two)
+  
 end
 
 def find_cool(array)
