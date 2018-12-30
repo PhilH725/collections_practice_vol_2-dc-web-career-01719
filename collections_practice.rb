@@ -32,23 +32,23 @@ def remove_non_strings(array)
   end
 end
 
-def count_elements(array)
-  counted_array = []
-  counter = 0
-  array.each do |i|
-    i.each do |symbol, name|
-      if counter == 0
-        element = {:name => name, :count => 1}
-        counted_array << element
-      else
-        element = {:name => name, :count => 1}
-        counted_array << element
-      end
-      counter += 1
-    end
-  end
-  counted_array
-end
+#def count_elements(array)
+#  counted_array = []
+#  counter = 0
+ # array.each do |i|
+#    i.each do |symbol, name|
+#      if counter == 0
+#        element = {:name => name, :count => 1}
+#        counted_array << element
+#      else
+#        element = {:name => name, :count => 1}
+#        counted_array << element
+#      end
+#      counter += 1
+#    end
+#  end
+#  counted_array
+#end
 
 def counted_array(array)
   tally = {}
