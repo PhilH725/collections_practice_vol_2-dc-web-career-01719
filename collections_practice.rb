@@ -59,7 +59,12 @@ def count_elements(array)
       tally[i] = 1
     end
   end
-  tally
+  tallied_array = []
+  tally.each do |name, amount|
+    element = {:name => name, :count => amount}
+    tallied_array << element
+  end
+  tallied_array
 end
 
 def merge_data(array_one, array_two)
