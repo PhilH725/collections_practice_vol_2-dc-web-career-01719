@@ -38,7 +38,6 @@ def count_elements(array)
   array.each do |i|
     i.each do |symbol, name|
       if counter == 0
-        puts name
         element = {:name => name, :count => 1}
         counted_array << element
       else
@@ -49,6 +48,18 @@ def count_elements(array)
     end
   end
   counted_array
+end
+
+def counted_array(array)
+  tally = {}
+  array.each do |i|
+    if tally[i]
+      tally[i] += 1
+    else
+      tally[i] = 1
+    end
+  end
+  tally
 end
 
 def merge_data(array_one, array_two)
