@@ -64,6 +64,9 @@ def merge_data(array_one, array_two)
         element[:motto] = value
       end
     end
+  array_two.each do |j|
+    j.each do |key, value|
+      if key == 
   puts element
   element
   end
