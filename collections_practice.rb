@@ -54,19 +54,11 @@ end
 def merge_data(array_one, array_two)
   
   merged_data = []
-  element = {:first_name => '', :awesomeness => 0, :height => "", :last_name => "", :motto => ""}
+  element_one = {:first_name => '', :awesomeness => 0, :height => "", :last_name => "", :motto => ""}
   array_one.each do |i|
-    i.each do |key, value|
-      if key == :first_name
-        element[:first_name] = value
-      end
-      if key == :motto
-        element[:motto] = value
-      end
-    end
-  array_two.each do |j|
-    j.each do |key, value|
-      if key == 
+    if i[:first_name] == 'blake'
+      element_one[:first_name] = i[:first_name]
+    if i[]
   puts element
   element
   end
