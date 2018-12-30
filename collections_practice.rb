@@ -33,11 +33,14 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  counter = {:name => '', :count => 0}
+  counted_array = []
+  counter = {}
   array.each do |i|
     i.each do |symbol, name|
-      counter[:name] = name
-      counter[:count] += 1
+      element = {:name => '', :count => 0}
+      element[:name] = name
+      element[:count] += 1
+      counted_array << element
     end
   end
   counter
