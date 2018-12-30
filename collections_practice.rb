@@ -59,7 +59,7 @@ def merge_data(array_one, array_two)
     5
   end
   element_one = {:first_name => 'blake', :awesomeness => 10, :height => "74", :last_name => "johnson", :motto => "Have a koala-ty day!"}
-  element_two = {:first_name => 'ashley', :awesomeness => 9, :height => "60", :last_name => "dubs", :motto => ""}
+  element_two = {:first_name => 'ashley', :awesomeness => 9, :height => "60", :last_name => "dubs", :motto => "I dub thee, 'Lady Brett Ashley'."}
     
   puts element
   element
