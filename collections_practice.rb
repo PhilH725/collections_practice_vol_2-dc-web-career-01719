@@ -80,6 +80,37 @@ def find_cool(array)
   end
 end
 
+ {
+      "flatiron school bk" => {
+        :location => "NYC"
+      },
+      "flatiron school" => {
+        :location => "NYC"
+      },
+      "dev boot camp" => {
+        :location => "SF"
+      },
+      "dev boot camp chicago" => {
+        :location => "Chicago"
+      },
+      "general assembly" => {
+        :location => "NYC"
+      },
+      "Hack Reactor" => {
+        :location => "SF"
+      }
+    }
+
 def organize_schools(array)
   
+  org_schools = {}
+  array.each do |school, location_hash|
+    location_hash.each do |symbols, value|
+      if org_schools[value]
+        org_schools[value] << school
+      else
+        org_schools[value] = [school]
+      end
+    end
+  end
 end
