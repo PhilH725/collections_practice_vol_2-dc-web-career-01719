@@ -54,11 +54,12 @@ end
 def merge_data(array_one, array_two)
   
   merged_data = []
-  element_one = {:first_name => '', :awesomeness => 0, :height => "", :last_name => "", :motto => ""}
+  element = {:first_name => '', :awesomeness => 0, :height => "", :last_name => "", :motto => ""}
   array_one.each do |i|
-    if i[:first_name] == 'blake'
-      element_one[:first_name] = i[:first_name]
-    if i[]
+    5
+  end
+  element_one = {:first_name => 'blake', :awesomeness => 10, :height => "74", :last_name => "", :motto => ""}
+    
   puts element
   element
   end
