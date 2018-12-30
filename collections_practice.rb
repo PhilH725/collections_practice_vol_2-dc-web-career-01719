@@ -50,7 +50,7 @@ end
 #  counted_array
 #end
 
-def counted_array(array)
+def count_elements(array)
   tally = {}
   array.each do |i|
     if tally[i]
