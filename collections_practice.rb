@@ -64,7 +64,20 @@ def merge_data(array_one, array_two)
 end
 
 def find_cool(array)
-
+  {[
+      {
+        :name => "ashley",
+        :temperature => "sort of cool"
+      },
+       {
+        :name => "blake",
+        :temperature => "cool"
+      }
+  ]}
+  
+  array.each do |i|
+    i.each do |key, value|
+      if key
   
 
 end
