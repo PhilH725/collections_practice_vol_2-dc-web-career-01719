@@ -38,12 +38,14 @@ def count_elements(array)
   array.each do |i|
     i.each do |symbol, name|
       if counter == 0
+        puts name
         element = {:name => name, :count => 1}
         counted_array << element
       else
         element = {:name => name, :count => 1}
         counted_array << element
       end
+      counter += 1
     end
   end
   counted_array
