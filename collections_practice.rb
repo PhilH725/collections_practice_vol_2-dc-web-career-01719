@@ -84,7 +84,7 @@ def organize_schools(array)
   
   org_schools = {}
   array.each do |school, location_hash|
-    location_hash.each do |symbols, value|
+    location_hash.each do |symbol, value|
       if org_schools[value]
         org_schools[value] << school
       else
